@@ -1,0 +1,24 @@
+{
+  "name": "playwright-auto-tester",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A Node.js-based testing utility that leverages Playwright to automate continuous testing of web pages",
+  "dependencies": {
+    "@playwright/test": "^1.53.2",
+    "dotenv": "^17.0.1",
+    "playwright": "^1.53.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "typescript": "^5.8.3"
+  }
+}
