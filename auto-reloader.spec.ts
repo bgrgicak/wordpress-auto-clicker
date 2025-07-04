@@ -7,17 +7,9 @@ const PAGE_TITLE_CONTAINS = process.env.PAGE_TITLE_CONTAINS || 'Dashboard';
 
 // Custom test function - modify this to implement your specific test logic
 async function customTest(page: Page) {
-  // Wait for page to be fully loaded
-  await page.waitForLoadState('networkidle');
-
   // Check if title contains expected text
   const title = await page.title();
   expect(title).toContain(PAGE_TITLE_CONTAINS);
-
-
-  // expect an a tag with aria-label="Deactivate Free" to exist
-  // const deactivateFree = await page.getByLabel('Deactivate Free');
-  // expect(deactivateFree).toBeTruthy();
 
   // Add your custom test logic here
   console.log(`✓ Page loaded successfully.`);
