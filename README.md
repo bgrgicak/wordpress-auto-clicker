@@ -1,4 +1,4 @@
-# Playwright Auto-Reloader Tester
+# WordPress auto-clicker
 
 A Playwright-based testing tool that continuously tests a target URL until failure occurs. Useful for stress testing, monitoring, and detecting intermittent issues.
 
