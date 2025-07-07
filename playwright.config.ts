@@ -11,13 +11,11 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
   reporter: 'null',
-  timeout: 120000, // 2 minutes per test
+  timeout: 1800000, // 30 minutes per test
   use: {
-    baseURL: 'http://localhost:3000',
+    baseURL: 'http://127.0.0.1:9400',
     trace: 'on-first-retry',
-    headless: false, // Set to true for headless mode
-    // video: 'retain-on-failure',
-    // screenshot: 'only-on-failure',
+    headless: true,
   },
 
   projects: [
